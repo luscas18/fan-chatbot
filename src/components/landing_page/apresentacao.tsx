@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
 export function Apresentacao() {
     return (
         <section className='py-[50px] md:py-[60px] text-white bg-gradient-to-b from-black from-50% to-[#3a2901] md:bg-[url(/images/landing-page/background_sessao_apresentacao.webp)] bg-cover bg-right'>

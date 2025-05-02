@@ -6,7 +6,6 @@ interface IProps {
 }
 export function CardMensagem({ texto, enviadoPorBot }: IProps) {
     return (
-
         <div className={`flex  items-start ${enviadoPorBot ? 'justify-end' : ' items-start'} gap-2.5`}>
             {
                 enviadoPorBot ?

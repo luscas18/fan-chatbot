@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import { CardMensagem } from './card_mensage'
-
 export function SessaoConversa() {
     const [inputMensagem, setMensagem] = useState('')
     return (
