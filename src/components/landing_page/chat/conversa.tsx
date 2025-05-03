@@ -1,4 +1,3 @@
-// app/session/conversa.tsx
 'use client';
 import { useChat } from '@/hooks/use_chat';
 import React from 'react';
