@@ -16,8 +16,7 @@ interface UseChatResult {
 
 export function useChat(): UseChatResult {
   const [mensagens, setMensagens] = useState<Mensagem[]>([
-    { texto: 'Quando é o próximo jogo?', enviadoPorBot: false },
-    { texto: 'Olá Furioso, o próximo jogo será quarta-feira, 9 de abril de 2025. Contra The Mongolz.', enviadoPorBot: true },
+    { texto: 'Olá Furioso, Aqui você pode tirar todas suas dúvidas.', enviadoPorBot: true },
   ]);
   const [inputMensagem, setMensagem] = useState('');
 
