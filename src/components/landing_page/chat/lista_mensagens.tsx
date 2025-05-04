@@ -16,7 +16,7 @@ export default function ListaMensagens({ mensagens }: ListaMensagensProps) {
   }, [mensagens]);
 
   return (
-    <div ref={mensagensContainerRef} className='overflow-y-auto max-h-[60vh] space-y-4 px-[15px] mb-[24px]'>
+    <div ref={mensagensContainerRef} className='overflow-y-auto max-h-[60vh] space-y-7 px-[15px] mb-[24px]'>
       {mensagens.map((msg, index) => (
         <CardMensagem key={index} texto={msg.texto} enviadoPorBot={msg.enviadoPorBot} />
       ))}
