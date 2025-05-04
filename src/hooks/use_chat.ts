@@ -16,7 +16,7 @@ interface UseChatResult {
 
 export function useChat(): UseChatResult {
   const [mensagens, setMensagens] = useState<Mensagem[]>([
-    { texto: 'Olá Furioso, Aqui você pode tirar todas suas dúvidas.', enviadoPorBot: true },
+    { texto: 'Olá Furioso, aqui você pode tirar todas suas dúvidas.', enviadoPorBot: true },
   ]);
   const [inputMensagem, setMensagem] = useState('');
 
