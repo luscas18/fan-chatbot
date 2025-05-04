@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FuriaChat: O Web Chat Inteligente para Fanáticos da FURIA! 🚀
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://pt-br.react.dev/)
+[![Google Gemini AI](https://img.shields.io/badge/Google_Gemini_AI-4285F4?style=for-the-badge&logoColor=white)](https://ai.google.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **Desenvolvido para o verdadeiro entusiasta da FURIA!** 🖤🧡 Mergulhe na paixão a cada mensagem e interação, aproximando você ainda mais do seu time favorito.
 
-First, run the development server:
+## 🏆 Visão Geral do Projeto: Caso de Uso Conversacional para a FURIA
+FuriaChat é um aplicativo web de chat inteligente criado especialmente para a comunidade apaixonada pela FURIA Esports. Desenvolvido como uma solução conversacional para fãs, o projeto utiliza Google Gemini AI com engenharia de prompt personalizada, garantindo respostas relevantes e contextuais exclusivamente sobre a organização FURIA.
+
+## ✨ Funcionalidades Principais
+
+* **Acessibilidade Multiplataforma:** Conecte-se perfeitamente com a comunidade FURIA via desktop ou celular, mantendo a emoção no seu bolso.
+* **Chat Inteligente com Gemini AI:** Obtenha respostas rápidas e precisas para todas as suas perguntas relacionadas à FURIA.
+* **Interação de Alta Performance:** Experimente tempos de resposta quase instantâneos, espelhando a intensidade dos momentos mais emocionantes do esports.
+* **Design Centrado no Usuário:** Uma interface limpa e intuitiva projetada para facilidade de uso, garantindo que você nunca perca nenhum detalhe da ação da FURIA.
+
+## 🚀 Primeiros Passos
+
+Siga estas instruções para configurar e executar o FuriaChat localmente:
+
+### Pré-requisitos
+
+* **Node.js** (última versão LTS recomendada - [https://nodejs.org/pt-br/](https://nodejs.org/pt-br/))
+* **npm** (vem com o Node.js) ou **yarn** ([https://yarnpkg.com/lang/pt-br/](https://yarnpkg.com/lang/pt-br/))
+
+### Instalação
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/luscas18/fan-chatbot.git
+    cd fan-chatbot
+    ```
+
+2.  **Instale as Dependências:**
+    Este projeto utiliza o Yarn para gerenciamento de dependências. Certifique-se de ter o Yarn instalado globalmente. Caso contrário, você pode instalá-lo via npm:
+    ```bash
+    npm install --global yarn
+    ```
+    Em seguida, instale as dependências do projeto:
+    ```bash
+    yarn install
+    ```
+
+3.  **Configuração do Ambiente:**
+    Crie um arquivo `.env.local` no diretório raiz do seu projeto e adicione sua chave de API do Google Gemini AI:
+    ```
+    GEMINI_API_KEY=SUA_CHAVE_DE_API_AQUI
+    ```
+    **Importante:** Trate sua chave de API como informação confidencial e evite commitar este arquivo em repositórios públicos.
+
+### Executando o Servidor de Desenvolvimento
+
+Execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

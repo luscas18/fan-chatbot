@@ -9,11 +9,11 @@ interface IProps {
 
 export function CardMensagem({ texto, enviadoPorBot }: IProps) {
     return (
-        <div className={`flex  items-start ${enviadoPorBot ? 'justify-end' : ' items-start'} gap-2.5`}>
+        <div className={`flex flex-col md:flex-row  items-end md:items-start ${enviadoPorBot ? 'justify-end' : ' items-start'} gap-2.5`}>
             {
                 enviadoPorBot ?
-                    <Image width={30} height={30} className="object-contain" src="/images/landing-page/icone_pantera_bot.webp" alt="Emoji Furia Chat" /> :
-                    <Image width={30} height={30} className="object-contain" src="/images/landing-page/icone_emoji_sorrindo.webp" alt="Emoji user Chat" />
+                    <Image width={30} height={30} className="object-contain order-first md:order-last object-right" src="/images/landing-page/icone_pantera_bot.webp" alt="Emoji Furia Chat" /> :
+                    <Image width={30} height={30} className="object-contain order-first object-right" src="/images/landing-page/icone_emoji_sorrindo.webp" alt="Emoji user Chat" />
             }
             <div className={`flex flex-col w-full max-w-[900px] leading-1.5 p-4 border-gray-200 text-black ${enviadoPorBot ? 'bg-dark-yellow order-first rounded-l-xl rounded-b-xl' : 'bg-white rounded-e-xl rounded-es-xl'} `}>
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
@@ -22,7 +22,6 @@ export function CardMensagem({ texto, enviadoPorBot }: IProps) {
                             <span className="text-sm font-semibold ">Furia</span> :
                             <span className="text-sm font-semibold">FuriaFan</span>
                     }
-                    <span className="text-sm font-normal">11:46</span>
                 </div>
                 {/* Use ReactMarkdown para renderizar o texto */}
                 <ReactMarkdown
