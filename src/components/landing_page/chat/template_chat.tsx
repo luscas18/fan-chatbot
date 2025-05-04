@@ -1,5 +1,5 @@
 import React from 'react'
-import { SessaoConversa } from './sessao_conversa'
+import { SessaoConversa } from './conversa'
 export function TemplateChat() {
   return (
     <section className='py-[40px] lg:py-[60px] bg-dark-yellow'>
